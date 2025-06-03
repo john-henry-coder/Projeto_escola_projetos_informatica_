@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://scratch.mit.edu/favicon.ico" type="image/x-icon">
+    <title>Protótipos_Para_escola</title>
+    <style>
+        /* Estilos básicos para a página */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        
+        /* Cabeçalho fixo */
+        header { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 20px; background-color: #007bff; color: white; 
+            position: fixed; width: 100%; top: 0; 
+        }
+
+        /* Botão de menu */
+        .menu-btn { cursor: pointer; background-color: rgb(181, 216, 27); border: none; padding: 10px; font-size: 16px; border-radius: 5px; }
+
+        /* Menu de navegação */
+        nav { 
+            display: none; position: absolute; right: 10px; top: 60px; 
+            background: white; box-shadow: 0 0 5px rgba(7, 7, 7, 0.3); padding: 10px;
+        }
+
+        nav button { display: block; background-color: #007bff; color: white; border: none; padding: 10px; margin: 5px 0; width: 100%; cursor: pointer; border-radius: 5px; }
+
+        /* Ajuste de layout */
+        main { margin-top: 80px; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+
+        section { 
+            margin-bottom: 40px; padding: 20px; background: white; border-radius: 5px; 
+            box-shadow: 0 0 5px rgba(0,0,0,0.2); width: 80%; transition: transform 0.3s ease-in-out;
+        }
+
+        /* Efeito ao passar o mouse */
+        section:hover { cursor:pointer; transform: scale(1.03); }
+
+        /* Rodapé fixo com direitos autorais */
+        footer { 
+            position: fixed; bottom: 0; width: 100%; 
+            background-color: #007bff; color: white; text-align: center; padding: 10px; font-size: 14px; 
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) { section { width: 95%; } nav { width: 150px; } }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 60%; /* Ajuste baseado na proporção do iframe */
+        }
+    
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Protótipos</h1>
+        <button class="menu-btn">Menu</button>
+        <nav id="menu">
+            <button onclick="location.href='projeto1.html'">Projeto 1</button>
+            <button onclick="location.href='projeto2.html'">Projeto 2</button>
+            <button onclick="location.href='diagramas.html'">Diagramas</button>
+            <button onclick="location.href='portfóliopdf.html'">Portfólio.pdf</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introdução</h2>
+            
+            <div class="conteudo"><p><!-- Insira um resumo sobre seu portfólio e o propósito da página -->
+                Bem-vindo ao meu portfólio "Protótipos_Para_escola", um espaço criado para reunir, demonstrar e compartilhar meu progresso na área de informática e desenvolvimento de projetos. Como estudante e entusiasta da tecnologia, busco aprimorar minhas habilidades através da prática, experimentação e inovação.
+
+Este projeto não se limita apenas à apresentação de ideias; ele é uma ferramenta de aprendizado e desenvolvimento, permitindo que cada conceito seja explorado detalhadamente. Por isso, organizei esta página em seções específicas, para que cada conteúdo tenha seu devido espaço e contexto:
+
+Projetos – Aqui apresento os trabalhos práticos desenvolvidos, sejam programas, jogos ou ferramentas úteis na computação.
+
+Prototipagem – Esta seção é dedicada à criação de modelos experimentais, explorando conceitos inovadores e soluções técnicas.
+
+Diagramas – Um espaço voltado à visualização de sistemas, arquitetura computacional e fluxos lógicos, permitindo uma compreensão mais clara dos projetos.
+
+Este portfólio reflete minha dedicação e empenho, e por isso todos os conteúdos aqui apresentados seguem os termos da Licença Apache 2.0. Isso significa que qualquer pessoa pode visualizar, usar e modificar os elementos do projeto, desde que mantenha os créditos originais e respeite os direitos autorais estabelecidos.
+
+📌 Proprietário: John Henry Oliveira Brito - John Henry Codificador 📜 Licença: Apache License 2.0 – Todos os direitos reservados
+
+O objetivo desta página é compartilhar conhecimento e demonstrar minhas habilidades, promovendo uma experiência interativa e envolvente para quem deseja explorar ideias tecnológicas.
+
+Sinta-se à vontade para navegar pelo conteúdo e acompanhar minha jornada no mundo da informática! 🚀
+            </p>
+        </div>
+        </section>
+
+        <section>
+            <h2>Projetos</h2>
+            <div class="conteudo"><p><!-- Liste seus principais projetos e seus links --></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Prototipagem de Jogos e Aplicativos</h2>
+            <div class="conteudo">
+                <p>Aqui estão os protótipos interativos que desenvolvi como parte do meu aprendizado.</p>
+                
+                <div class="iframe-container">
+                    <iframe src="https://scratch.mit.edu/projects/1178756473/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+        
+                <p style="text-align: center; font-size: 14px;">
+                    Este jogo foi desenvolvido utilizando a plataforma <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>. 
+                    Agradecimentos à comunidade Scratch e aos recursos disponíveis na plataforma.
+                </p>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Diagramas</h2>
+            <div class="conteudo">
+            <p><!-- Insira diagramas representando sistemas computacionais e redes --></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 John Henry Oliveira Brito - John Henry Codificador. Todos os direitos reservados.
+    </footer>
+    <script>
+        
+        
+        
+        // Controle do menu de navegação
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            let menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+        
+      
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("section").forEach(section => {
+            let content = section.querySelector("p");
+            content.style.display = "none"; // Oculta o conteúdo inicialmente
+                    
+            section.addEventListener("click", function () {
+            // Alterna entre mostrar e esconder o conteúdo ao clicar
+            content.style.display = content.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+     
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("section").forEach(section => {
+                let content = section.querySelector(".conteudo");
+                content.style.display = "none"; // Oculta o conteúdo inicialmente
+                
+                section.addEventListener("click", function () {
+                    content.style.display = content.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+
+
+        // Efeito de fade-in ao carregar a página
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("section").forEach(section => {
+                section.style.opacity = "1";
+                section.style.transition = "opacity 0.8s ease-in-out";
+            });
+        });
+
+        // Adicionando rolagem suave ao clicar nos botões do menu
+        document.querySelectorAll('nav button').forEach(btn => {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetPage = event.target.getAttribute('onclick').split("'")[1];
+                window.location.href = targetPage;
+            });
+        });
+
+        // Animação nos botões do menu
+        document.querySelectorAll("nav button").forEach(button => {
+            button.addEventListener("mouseover", function() {
+                button.style.backgroundColor = "#0056b3";
+                button.style.transform = "scale(1.1)";
+            });
+
+            button.addEventListener("mouseout", function() {
+                button.style.backgroundColor = "#007bff";
+                button.style.transform = "scale(1)";
+            });
+        });
+    </script>
+
+</body>
+</html>
