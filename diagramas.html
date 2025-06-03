@@ -8,7 +8,7 @@
     <style>
         /* Estilos básicos para a página */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; align-items: center; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; align-items: center; padding: 20px; }
         
         /* Rodapé fixo com direitos autorais */
         footer { 
@@ -17,23 +17,27 @@
         }
 
          /* Responsividade */
-         @media (max-width: 600px) { section { width: 95%; } nav { width: 150px; } }
-
-
+         @media (max-width: 600px) { 
+            img { width: 95%; height: auto; } 
+        }
     </style>
 
 </head>
 <body>
     <h1>Diagramas</h1>
-    <embed src="https://john-henry-coder.github.io/Projeto_escola_projetos_informatica_/foto1dodiagrama.JPG" type="application" width="100%" height="800px" />
-    <a href="foto1dodiagrama.JPG" download>Baixar imagem 1 do diagrama</a>
-    <br>
 
-    <embed src="https://john-henry-coder.github.io/Projeto_escola_projetos_informatica_/foto2dodiagrama.JPG" type="application" width="100%" height="800px" />
-    <a href="foto2dodiagrama.JPG" download>Baixar imagem 2 do diagrama</a><br><br>
+    <!-- Exibição correta das imagens -->
+    <img src="foto1dodiagrama.jpg" width="100%" alt="Imagem 1 do diagrama">
+    <br>
+    <a href="foto1dodiagrama.jpg" download>Baixar imagem 1 do diagrama</a>
+    <br><br>
+
+    <img src="foto2dodiagrama.jpg" width="100%" alt="Imagem 2 do diagrama">
+    <br>
+    <a href="foto2dodiagrama.jpg" download>Baixar imagem 2 do diagrama</a>
+
     <footer>
         © 2025 John Henry Oliveira Brito - John Henry Codificador. Todos os direitos reservados.
     </footer>
-    <br><br><br><br>
 </body>
 </html>
